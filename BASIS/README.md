@@ -22,9 +22,9 @@ Command usage for most commands is in the form of `command param1,param2,etc`. I
 
 * `store`, this command accepts only 2 parameters of which one must be a non reserved memory address and another must be a register. This takes the value of the register and stores it at the specified memory address.
 * `load`, This command is actually three commands:
- * In the case where there are only registers as params, this copies the value of the first register into the other register(s)
- * If the number of register and values params are equal, each register is set to each value in order of appearance.
- * Else, each register's value is set to the only value param present.
+  * In the case where there are only registers as params, this copies the value of the first register into the other register(s)
+  * If the number of register and values params are equal, each register is set to each value in order of appearance.
+  * Else, each register's value is set to the only value param present.
 * `add`, this command adds the sum of the parameters to the last register on that line.
 * `sub`, this command substracts the difference of the parameters from the last register on that line.
 * `inc`, increment the values of all registers on that line by 1
@@ -41,8 +41,8 @@ Command usage for most commands is in the form of `command param1,param2,etc`. I
 * `loop`, this indicates where the forever/while loop ends. It accepts no params.
 * `jump`, basically the assembly equivalent of goto. accepts labels only. No line numbers. Also accepts the names of comparison results (see `comp` above) to have conditional jumping.
 * `screen` this is actually two commands. In both cases, the second argument is optional, in which case the sole argument is used as both parameters.
- * When it's the first command at the top of the file, it sets the window width and height. Default value is 0, so don't forget to put it there. It also has the effect of defining the memory location range used for pixels. Pixels are 8 bits and work exactly like on the gameboy advance.
- * When it is used later, it redefines pixel size. Default pixel size is 1x1.
+  * When it's the first command at the top of the file, it sets the window width and height. Default value is 0, so don't forget to put it there. It also has the effect of defining the memory location range used for pixels. Pixels are 8 bits and work exactly like on the gameboy advance.
+  * When it is used later, it redefines pixel size. Default pixel size is 1x1.
 
 #### Memory
 Some memory addresses are reserved for special uses. These are:
